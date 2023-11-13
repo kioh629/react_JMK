@@ -1,0 +1,1169 @@
+@font-face {
+  font-family: "TestGeograph-Bold";
+  src: url(../font/TestGeograph-Bold.otf) format("opentype");
+}
+@font-face {
+  font-family: "TestGeograph-Medium";
+  src: url(../font/TestGeograph-Medium.otf) format("opentype");
+}
+@font-face {
+  font-family: "TestGeograph-Regular";
+  src: url(../font/TestGeograph-Regular.otf) format("opentype");
+}
+@font-face {
+  font-family: "TestGeograph-Light";
+  src: url(../font/TestGeograph-Light.otf) format("opentype");
+}
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url(../font/Pretendard-Bold.woff) format("woff");
+}
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url(../font/Pretendard-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: "Pretendard-Light";
+  src: url(../font/Pretendard-Light.woff) format("woff");
+}
+@font-face {
+  font-family: "Pretendard-Thin";
+  src: url(../font/Pretendard-Thin.woff) format("woff");
+}
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  background: #000000;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+header {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 70px;
+  background: #000000;
+}
+header #header_wrap {
+  width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+header #header_wrap h1 {
+  width: 151px;
+  height: 70px;
+}
+header #header_wrap h1 a img {
+  width: 151px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header #header_wrap #top_menu {
+  display: flex;
+  justify-content: space-evenly;
+  width: 500px;
+}
+header #header_wrap #top_menu li {
+  text-align: center;
+  height: 70px;
+  line-height: 70px;
+  width: 20%;
+  font-family: "TestGeograph-Light", sans-serif;
+  font-size: 16px;
+}
+header #header_wrap #top_menu li a {
+  transition: all 0.2s;
+}
+header #header_wrap #top_menu li a:hover {
+  color: #FFDB00;
+  cursor: pointer;
+}
+
+#main {
+  background: url(../img/backimg.jpg) no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: 100%;
+}
+#main #main_text {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15%;
+  width: 720px;
+}
+#main #main_text #title01 {
+  margin: 0 0 20px 20px;
+}
+#main #main_text #title01 li:first-child {
+  font-family: "TestGeograph-Regular", sans-serif;
+  font-size: 16px;
+}
+#main #main_text #title01 li:last-child {
+  font-family: "Pretendard-Bold", sans-serif;
+  font-size: 16px;
+}
+#main #main_text #catchphrase {
+  font-family: "TestGeograph-Bold", sans-serif;
+  font-size: 44px;
+  border-left: 3px solid #FFDB00;
+  padding: 0 0 0 20px;
+  height: 150px;
+}
+#main #main_text #catchphrase li {
+  height: 50px;
+  line-height: 50px;
+}
+#main #main_text #main_discription {
+  font-family: "Pretendard-Light", sans-serif;
+  font-size: 16px;
+  margin: 20px 0 0 20px;
+}
+#main #main_text #main_discription li {
+  margin: 10px auto;
+}
+#main #main_text #main_discription li:first-child {
+  margin: 20px 0 30px 0;
+}
+
+#brand {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#brand #brand_wrap {
+  width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+#brand #brand_wrap #brand_left {
+  width: 900px;
+  height: 720px;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 1fr 0.5fr 1fr;
+  row-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+#brand #brand_wrap #brand_left ul {
+  border-radius: 20px;
+  cursor: pointer;
+}
+#brand #brand_wrap #brand_left ul .category {
+  font-family: "TestGeograph-Bold", sans-serif;
+  font-size: 32px;
+  height: 32px;
+  line-height: 32px;
+  border-left: 2px solid #FFDB00;
+  padding-left: 10px;
+}
+#brand #brand_wrap #brand_left ul .sub_category {
+  font-family: "TestGeograph-Light", sans-serif;
+  font-size: 12px;
+  padding-left: 15px;
+}
+#brand #brand_wrap #brand_left #b_society {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  background: url(../img/brand_1.jpg);
+  background-size: cover;
+  background-position: right;
+  position: relative;
+  filter: brightness(100%);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+#brand #brand_wrap #brand_left #b_society:hover {
+  filter: brightness(120%);
+}
+#brand #brand_wrap #brand_left #b_society li {
+  position: absolute;
+  left: 10%;
+  bottom: 10%;
+}
+#brand #brand_wrap #brand_left #b_channel {
+  grid-row: 1/2;
+  grid-column: 2/4;
+  background: url(../img/brand_2.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(100%);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+#brand #brand_wrap #brand_left #b_channel:hover {
+  filter: brightness(120%);
+}
+#brand #brand_wrap #brand_left #b_channel li:first-child {
+  position: absolute;
+  left: 6%;
+  top: 8%;
+}
+#brand #brand_wrap #brand_left #b_channel li:last-child {
+  position: absolute;
+  left: 6%;
+  top: 18%;
+}
+#brand #brand_wrap #brand_left #b_store {
+  grid-row: 2/3;
+  grid-column: 1/3;
+  background: url(../img/brand_3.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(100%);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+#brand #brand_wrap #brand_left #b_store:hover {
+  filter: brightness(120%);
+}
+#brand #brand_wrap #brand_left #b_store li:first-child {
+  position: absolute;
+  right: 6%;
+  top: 8%;
+}
+#brand #brand_wrap #brand_left #b_store li:last-child {
+  position: absolute;
+  right: 6%;
+  top: 18%;
+}
+#brand #brand_wrap #brand_left #b_magazine {
+  grid-row: 2/3;
+  grid-column: 3/4;
+  background: url(../img/brand_4.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(100%);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+#brand #brand_wrap #brand_left #b_magazine:hover {
+  filter: brightness(120%);
+}
+#brand #brand_wrap #brand_left #b_magazine li:first-child {
+  position: absolute;
+  left: 6%;
+  bottom: 15%;
+}
+#brand #brand_wrap #brand_left #b_magazine li:last-child {
+  position: absolute;
+  left: 6%;
+  bottom: 8%;
+}
+#brand #brand_wrap #brand_right {
+  width: 500px;
+  height: 400px;
+  position: relative;
+  right: 0;
+  top: 45%;
+  text-align: right;
+}
+#brand #brand_wrap #brand_right .brand_name {
+  height: 60px;
+  line-height: 60px;
+  font-family: "TestGeograph-Bold", sans-serif;
+  font-size: 36px;
+}
+#brand #brand_wrap #brand_right .brand_name:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 30px;
+  border: 5px solid #FFDB00;
+  margin-right: 10px;
+  position: relative;
+  top: 10%;
+}
+#brand #brand_wrap #brand_right #sns {
+  width: 180px;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  left: 310px;
+  margin: 100px 0 50px 0;
+}
+#brand #brand_wrap #brand_right #sns li {
+  width: 35px;
+  height: 35px;
+  background: #ffffff;
+  border-radius: 35px;
+  text-align: center;
+  line-height: 35px;
+  transition: all 0.2s;
+}
+#brand #brand_wrap #brand_right #sns li:hover {
+  background: #FFDB00;
+}
+#brand #brand_wrap #brand_right #sns li a {
+  color: #000000;
+  font-size: 24px;
+}
+#brand #brand_wrap #brand_right #brand_discription {
+  font-family: "Pretendard-Light", sans-serif;
+  font-size: 16px;
+  line-height: 2;
+}
+#brand #brand_wrap #brand_right #brand_discription li:first-child {
+  margin-bottom: 25px;
+}
+
+.sec_title {
+  font-family: "TestGeograph-Bold", sans-serif;
+  font-size: 40px;
+}
+
+.sec_text {
+  font-family: "Pretendard-Light", sans-serif;
+  font-size: 16px;
+}
+
+.sec_sub {
+  font-family: "TestGeograph-Light", sans-serif;
+  font-size: 16px;
+}
+
+.bic_logo {
+  width: 134px;
+  height: 200px;
+  border: 15px solid #FFDB00;
+}
+
+#society {
+  width: 100%;
+  height: 160%;
+}
+#society #soctop_wrap {
+  width: 1500px;
+  height: 200px;
+  padding-top: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+#society #soctop_wrap #soctop_left {
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+}
+#society #soctop_wrap #soctop_left ul {
+  margin-left: 60px;
+}
+#society #soctop_wrap #soctop_left ul li:nth-child(2) {
+  margin: 40px 0 30px 20px;
+}
+#society #soctop_wrap #soctop_left ul li:nth-child(3) {
+  line-height: 1.6;
+  margin-left: 20px;
+}
+#society #soctop_wrap #soctop_right {
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+}
+#society #soctop_wrap #soctop_right li {
+  margin: auto 20px;
+  height: 70px;
+  line-height: 70px;
+  background: #FFDB00;
+  border-radius: 35px;
+  text-align: center;
+  transition: all 0.2s;
+}
+#society #soctop_wrap #soctop_right li:hover {
+  background: #ffae00;
+}
+#society #soctop_wrap #soctop_right li.soc_btn1 {
+  width: 250px;
+}
+#society #soctop_wrap #soctop_right li.soc_btn2 {
+  width: 200px;
+}
+#society #soctop_wrap #soctop_right li a {
+  display: block;
+  border-radius: 35px;
+  font-family: "Pretendard-Bold", sans-serif;
+  font-size: 20px;
+  color: #000000;
+  width: inherit;
+  height: inherit;
+}
+#society #pro_title {
+  margin: 200px auto 60px;
+  text-align: center;
+  font-family: "TestGeograph-Bold", sans-serif;
+  font-size: 40px;
+}
+#society #pro_title a {
+  transition: all 0.2s;
+}
+#society #pro_title a:hover {
+  color: #FFDB00;
+  cursor: pointer;
+}
+#society .pro_list {
+  margin-left: 10%;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  font-family: "TestGeograph-Regular", sans-serif;
+  font-size: 24px;
+  border-left: 2px solid #FFDB00;
+}
+#society #e_pro_wrap {
+  width: 100%;
+  overflow: hidden;
+}
+#society #e_pro_wrap #e_pro {
+  width: 2100px;
+}
+#society #e_pro_wrap #e_pro figure {
+  margin-right: 20px;
+  width: 20%;
+}
+#society #e_pro_wrap #e_pro figure img {
+  width: 500px;
+  filter: brightness(100%);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+#society #e_pro_wrap #e_pro figure img:hover {
+  filter: brightness(120%);
+}
+#society #e_pro_wrap #e_pro figure figcaption {
+  text-align: left;
+  margin-top: 5px;
+  font-family: "TestGeograph-Light", sans-serif;
+  font-size: 16px;
+}
+#society #y_pro_wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+#society #y_pro_wrap #y_pro {
+  display: flex;
+  justify-content: space-between;
+}
+#society #y_pro_wrap #y_pro figure {
+  margin-right: 20px;
+}
+#society #y_pro_wrap #y_pro figure img {
+  width: 450px;
+  filter: brightness(100%);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+#society #y_pro_wrap #y_pro figure img:hover {
+  filter: brightness(120%);
+}
+#society #y_pro_wrap #y_pro figure figcaption {
+  text-align: left;
+  margin-top: 5px;
+  font-family: "TestGeograph-Light", sans-serif;
+  font-size: 16px;
+}
+
+#channel {
+  width: 100%;
+  height: 170%;
+}
+#channel #chtop {
+  width: 1500px;
+  height: 200px;
+  padding-top: 100px;
+  margin: 0 auto;
+  display: flex;
+}
+#channel #chtop .right_of_logo {
+  width: 100%;
+  margin-left: 60px;
+}
+#channel #chtop .right_of_logo .channel_title {
+  display: flex;
+  justify-content: space-between;
+}
+#channel #chtop .right_of_logo #ch_article {
+  margin-left: 20px;
+}
+#channel #chtop .right_of_logo #ch_article li:first-child {
+  margin: 45px 0 30px 0;
+}
+#channel #show {
+  width: 1500px;
+  margin: 200px auto 60px;
+}
+#channel #show #show_top {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 25px;
+}
+#channel #show #show_top #show_title {
+  font-family: "TestGeograph-Bold", sans-serif;
+  font-size: 36px;
+  border-left: 2px solid #FFDB00;
+  padding-left: 15px;
+}
+#channel #show #show_top .more {
+  font-family: "TestGeograph-Light", sans-serif;
+  font-size: 16px;
+}
+#channel #show #show_top .more a {
+  transition: all 0.2s;
+}
+#channel #show #show_top .more a:hover {
+  color: #FFDB00;
+  cursor: pointer;
+}
+#channel #show #video {
+  display: flex;
+  justify-content: space-between;
+}
+#channel #show #video figure {
+  position: relative;
+}
+#channel #show #video figure img:first-child {
+  border-radius: 20px;
+}
+#channel #show #video figure img:nth-child(2) {
+  position: absolute;
+  bottom: 8%;
+  left: 5%;
+  height: 40px;
+}
+#channel #show #video figure #watch_btn {
+  font-family: "TestGeograph-Regular", sans-serif;
+  font-size: 16px;
+  position: absolute;
+  bottom: 8%;
+  right: 5%;
+  width: 130px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #FFDB00;
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+#channel #show #video figure #watch_btn:hover {
+  background: #ffae00;
+}
+#channel #show #video figure #watch_btn a {
+  color: #000000;
+}
+#channel #show #video aside {
+  overflow: hidden;
+  width: 630px;
+  height: 489px;
+  background: #161616;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+#channel #show #video aside #cap_title {
+  margin: 40px 0 0 30px;
+}
+#channel #show #video aside #cap_title li {
+  margin: 5px 0 5px;
+}
+#channel #show #video aside #cap_title #cap_sub {
+  font-family: "TestGeograph-Regular", sans-serif;
+  font-size: 16px;
+  margin-left: 20px;
+}
+#channel #show #video aside #cap_title #cap_main {
+  font-family: "Pretendard-Bold", sans-serif;
+  font-size: 32px;
+  border-left: 2px solid #FFDB00;
+  padding-left: 10px;
+}
+#channel #show #video aside #cap_title #cap_dis {
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 16px;
+  margin-left: 20px;
+}
+#channel #show #video aside .cap_text {
+  margin: 30px 50px 0 50px;
+}
+#channel #show #video aside .cap_text .cap_text_title {
+  font-family: "TestGeograph-Medium", sans-serif;
+  font-size: 18px;
+}
+#channel #show #video aside .cap_text .cap_text_text {
+  font-family: "Pretendard-Light", sans-serif;
+  font-size: 16px;
+  margin: 10px 0 0 10px;
+}
+#channel #show #video aside .cap_text #disneylink a {
+  transition: all 0.2s;
+}
+#channel #show #video aside .cap_text #disneylink a:hover {
+  color: #FFDB00;
+  cursor: pointer;
+}
+#channel #show #thumb {
+  width: 100%;
+  margin-top: 20px;
+}
+#channel #show #thumb figure {
+  margin-right: 20px;
+  filter: brightness(75%);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+#channel #show #thumb figure:hover {
+  filter: brightness(100%);
+}
+#channel #show #thumb figure:last-child {
+  margin-right: 0;
+}
+#channel #show #thumb figure img {
+  width: 100%;
+  border-radius: 20px;
+}
+#channel #show #thumb figure.selected {
+  filter: brightness(100%);
+}
+#channel #ch_logos {
+  margin: 100px auto 0;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+#channel #ch_logos img {
+  height: 40px;
+}
+#channel h3 {
+  margin-top: 100px;
+  text-align: center;
+  font-family: "Pretendard-Bold", sans-serif;
+  font-size: 32px;
+}
+#channel h3 a {
+  transition: all 0.2s;
+}
+#channel h3 a:hover {
+  color: #FFDB00;
+  cursor: pointer;
+}
+
+#store {
+  width: 100%;
+  height: 200%;
+}
+#store #store_top {
+  width: 1500px;
+  height: 300px;
+  padding-top: 100px;
+  margin: 0 auto;
+  display: flex;
+}
+#store #store_top .right_of_logo {
+  width: 100%;
+  margin-left: 60px;
+}
+#store #store_top .right_of_logo .store_title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#store #store_top .right_of_logo #store_article li {
+  line-height: 1.6;
+}
+#store #store_top .right_of_logo #store_article li:first-child {
+  margin: 30px 0 15px 0;
+}
+#store #s_category {
+  width: 1500px;
+  height: 1200px;
+  margin: 100px auto 0;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 650px 290px 510px;
+  row-gap: 20px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+#store #s_category ul {
+  background: #FFDB00;
+  border-radius: 20px;
+}
+#store #s_category ul#apparel {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  background: url(../img/store1_2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(100%);
+  transition: all 0.2s;
+  cursor: pointer;
+  position: relative;
+}
+#store #s_category ul#apparel:hover {
+  filter: brightness(120%);
+}
+#store #s_category ul#apparel .store_name {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+}
+#store #s_category ul#apparel .store_name a {
+  transition: all 0.2s;
+}
+#store #s_category ul#apparel .store_name a:hover {
+  color: #FFDB00;
+  cursor: pointer;
+}
+#store #s_category ul#apparel .store_caption {
+  position: absolute;
+  left: 5%;
+  top: 13%;
+}
+#store #s_category ul#mobile {
+  grid-row: 1/2;
+  grid-column: 2/4;
+  background: url(../img/store2_1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(100%);
+  transition: all 0.2s;
+  cursor: pointer;
+  position: relative;
+}
+#store #s_category ul#mobile:hover {
+  filter: brightness(120%);
+}
+#store #s_category ul#mobile .store_name {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+#store #s_category ul#mobile .store_name a {
+  transition: all 0.2s;
+}
+#store #s_category ul#mobile .store_name a:hover {
+  color: #FFDB00;
+  cursor: pointer;
+}
+#store #s_category ul#mobile .store_caption {
+  position: absolute;
+  right: 5%;
+  top: 13%;
+}
+#store #s_category ul#pc_acc {
+  grid-row: 2/3;
+  grid-column: 1/3;
+  background: url(../img/store3_1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(100%);
+  transition: all 0.2s;
+  cursor: pointer;
+  position: relative;
+}
+#store #s_category ul#pc_acc:hover {
+  filter: brightness(120%);
+}
+#store #s_category ul#pc_acc .store_name {
+  position: absolute;
+  left: 5%;
+  bottom: 11%;
+}
+#store #s_category ul#pc_acc .store_name a {
+  transition: all 0.2s;
+}
+#store #s_category ul#pc_acc .store_name a:hover {
+  color: #FFDB00;
+  cursor: pointer;
+}
+#store #s_category ul#pc_acc .store_caption {
+  position: absolute;
+  left: 5%;
+  bottom: 7%;
+}
+#store #s_category ul#gimbal {
+  grid-row: 2/3;
+  grid-column: 3/4;
+  background: url(../img/store4_2.jpg) no-repeat;
+  background-size: cover;
+  background-position: right;
+  filter: brightness(100%);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+#store #s_category ul#gimbal:hover {
+  filter: brightness(120%);
+}
+#store #s_category ul#gimbal .store_name {
+  position: absolute;
+  right: 5%;
+  bottom: 11%;
+}
+#store #s_category ul#gimbal .store_name a {
+  transition: all 0.2s;
+}
+#store #s_category ul#gimbal .store_name a:hover {
+  color: #FFDB00;
+  cursor: pointer;
+}
+#store #s_category ul#gimbal .store_caption {
+  position: absolute;
+  right: 5%;
+  bottom: 7%;
+}
+#store #s_category .store_name {
+  font-family: "TestGeograph-Bold", sans-serif;
+  font-size: 40px;
+  padding-left: 10px;
+  height: 42px;
+  line-height: 42px;
+  border-left: 2px solid #FFDB00;
+}
+#store #s_category .store_caption {
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+#magazine {
+  padding-top: 150px;
+  width: 100%;
+  height: 230%;
+}
+#magazine #magazine_wrap {
+  width: 1500px;
+  height: 2130px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 400px 400px 400px 400px;
+  grid-template-columns: 700px 700px;
+  row-gap: 100px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+}
+#magazine #magazine_wrap div#ng {
+  grid-row: 1/3;
+  grid-column: 1/2;
+  background: url(../img/magazine1_1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  position: relative;
+}
+#magazine #magazine_wrap div#magazine_top {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+#magazine #magazine_wrap div#magazine_top #logotitle {
+  display: flex;
+}
+#magazine #magazine_wrap div#magazine_top #logotitle ul {
+  margin-left: 80px;
+}
+#magazine #magazine_wrap div#magazine_top #logotitle ul .sec_title {
+  text-align: left;
+  margin: 0 0px 10px 0;
+}
+#magazine #magazine_wrap div#magazine_top #logotitle ul .sec_sub {
+  font-family: "TestGeograph-Regular", sans-serif;
+  font-size: 16px;
+  text-align: left;
+  margin-right: 0px;
+}
+#magazine #magazine_wrap div#magazine_top #logotitle ul .sec_text_bold {
+  font-family: "Pretendard-Bold", sans-serif;
+  font-size: 18px;
+  text-align: left;
+  margin: 30px 0px 0 0;
+  line-height: 1.6;
+}
+#magazine #magazine_wrap div#magazine_top #top_article .sec_text {
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 16px;
+}
+#magazine #magazine_wrap div#magazine_top #top_article .sec_text:first-child {
+  margin-top: 50px;
+}
+#magazine #magazine_wrap div#magazine_top #top_article .sec_text:last-child {
+  margin-top: 30px;
+}
+#magazine #magazine_wrap div#traveler {
+  grid-row: 2/4;
+  grid-column: 2/3;
+  background: url(../img/magazine2_1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  position: relative;
+}
+#magazine #magazine_wrap div#kids {
+  grid-row: 3/5;
+  grid-column: 1/2;
+  background: url(../img/magazine3_1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  position: relative;
+}
+#magazine #magazine_wrap div#magazine_info {
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+#magazine #magazine_wrap div#magazine_info ul {
+  font-family: "Pretendard-Bold", sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+#magazine #magazine_wrap div#magazine_info ul li {
+  line-height: 1.6;
+}
+#magazine #magazine_wrap div#magazine_info ul li:first-child {
+  margin: 80px 0 40px 0;
+}
+#magazine #magazine_wrap div .m_category {
+  font-family: "TestGeograph-Bold", sans-serif;
+  font-size: 24px;
+  position: absolute;
+  top: -5%;
+  border-left: 2px solid #FFDB00;
+  padding-left: 10px;
+}
+#magazine #magazine_wrap div .m_category a {
+  transition: all 0.2s;
+}
+#magazine #magazine_wrap div .m_category a:hover {
+  color: #FFDB00;
+  cursor: pointer;
+}
+#magazine #magazine_wrap div .m_top .date {
+  font-family: "TestGeograph-Medium", sans-serif;
+  font-size: 18px;
+  position: absolute;
+  top: 3%;
+  left: 3%;
+}
+#magazine #magazine_wrap div .m_top .m_title {
+  font-family: "Pretendard-Bold", sans-serif;
+  font-size: 48px;
+  position: absolute;
+  top: 7%;
+  width: 700px;
+  text-align: center;
+}
+#magazine #magazine_wrap div .m_top .m_title a {
+  transition: all 0.2s;
+}
+#magazine #magazine_wrap div .m_top .m_title a:hover {
+  color: #FFDB00;
+  cursor: pointer;
+}
+#magazine #magazine_wrap div .m_top .staff {
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 12px;
+  position: absolute;
+  top: 15%;
+  width: 700px;
+  text-align: right;
+  padding-right: 20px;
+}
+#magazine #magazine_wrap div .m_top .staff span:first-child {
+  border-right: 2px solid #FFDB00;
+  padding-right: 10px;
+}
+#magazine #magazine_wrap div .m_top .staff span:last-child {
+  margin-left: 10px;
+}
+#magazine #magazine_wrap div .m_mid li {
+  margin: 30px;
+  line-height: 1.6;
+}
+#magazine #magazine_wrap div .m_mid li:first-child {
+  position: absolute;
+  top: 70%;
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 18px;
+  border-left: 2px solid #FFDB00;
+  padding-left: 10px;
+}
+#magazine #magazine_wrap div .m_mid li:nth-child(2) {
+  position: absolute;
+  top: 78%;
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 16px;
+}
+#magazine #magazine_wrap div .m_bot {
+  width: 640px;
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 1%;
+  margin: 30px;
+}
+#magazine #magazine_wrap div .m_bot .b_cate_small {
+  font-family: "TestGeograph-Light", sans-serif;
+  font-size: 12px;
+}
+#magazine #magazine_wrap div .m_bot .m_btn {
+  width: 200px;
+  height: 50px;
+  background: #FFDB00;
+  border-radius: 25px;
+  text-align: center;
+  font-family: "Pretendard-Bold", sans-serif;
+  font-size: 16px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+#magazine #magazine_wrap div .m_bot .m_btn:hover {
+  background: #ffae00;
+}
+#magazine #magazine_wrap div .m_bot .m_btn a {
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+  color: #000000;
+}
+
+#quickmenu {
+  display: none;
+  position: fixed;
+  bottom: 10%;
+  right: 2%;
+}
+#quickmenu ul li {
+  font-family: "TestGeograph-Light", sans-serif;
+  font-size: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 60px;
+  height: 60x;
+  background: #FFDB00;
+  border-radius: 35px;
+  line-height: 40px;
+  transition: all 0.2s;
+}
+#quickmenu ul li:hover {
+  background: #ffae00;
+}
+#quickmenu ul li a {
+  display: block;
+  color: #000000;
+  width: inherit;
+  height: inherit;
+}
+
+footer {
+  width: 100%;
+  height: 400px;
+  background: #161616;
+}
+footer #foot_wrap {
+  width: 1500px;
+  height: 300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 20% 20% 5%;
+  grid-template-columns: 1fr 4.5fr;
+  row-gap: 50px;
+}
+footer #foot_wrap #f_logo {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  margin-top: 50px;
+}
+footer #foot_wrap #f_logo img {
+  height: 45px;
+}
+footer #foot_wrap nav {
+  margin-top: 50px;
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+footer #foot_wrap nav ul {
+  text-align: left;
+  display: flex;
+}
+footer #foot_wrap nav ul li {
+  font-family: "TestGeograph-Light", sans-serif;
+  font-size: 16px;
+  margin-right: 50px;
+  text-align: center;
+}
+footer #foot_wrap #f_sns {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  width: 180px;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: auto 0;
+}
+footer #foot_wrap #f_sns li {
+  width: 35px;
+  height: 35px;
+  background: #ffffff;
+  border-radius: 35px;
+  text-align: center;
+  line-height: 35px;
+  transition: all 0.2s;
+}
+footer #foot_wrap #f_sns li:hover {
+  background: #FFDB00;
+}
+footer #foot_wrap #f_sns li a {
+  color: #000000;
+  font-size: 24px;
+}
+footer #foot_wrap #contact {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+footer #foot_wrap #contact p {
+  font-family: "TestGeograph-Light", sans-serif;
+  font-size: 16px;
+}
+footer #foot_wrap #contact ul {
+  display: flex;
+  margin-left: 10px;
+}
+footer #foot_wrap #contact ul li {
+  font-family: "Pretendard-Light", sans-serif;
+  font-size: 14px;
+  color: #A6A6A6;
+  width: 160px;
+  margin: 10px 5px 0 0;
+}
+footer #foot_wrap address {
+  grid-row: 3/4;
+  grid-column: 2/3;
+  font-family: "TestGeograph-Light", sans-serif;
+  font-size: 14px;
+  color: #A6A6A6;
+  font-style: normal;
+}/*# sourceMappingURL=index.css.map */
